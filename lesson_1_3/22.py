@@ -5,9 +5,11 @@
 В данной задаче пробелы не учитываются.
 Гарантируется, что исходная строка может содержать символы только нижнего регистра. '''
 
-string = input("Введите строку:  \n")
+string= input("Введите строку:  \n")
 
 string = string.replace(" ","")
+
+string = string.lower()
 
 is_palindrom = string == string[::-1]
 
